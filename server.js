@@ -1,6 +1,6 @@
 const {app} = require("./index")
 const http = require("http")
-
+require("./utility/db/mongoose.js")
 
 const server = http.createServer(app)
 server.listen(4000,()=>{
